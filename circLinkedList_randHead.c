@@ -39,12 +39,13 @@ Node *randRear (Node *rear, int total){
     rand_int = (rand() % (total - 0 + 1)); // generate random integer from 0 to total
     i = rand_int;
     rear = rear->next;
-    
+
     /* randomize new position of rear */
     while (i != 0){ 
         rear = rear->next;
         i--;
     }
+    
     return rear;
 }
 
